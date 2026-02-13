@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Someone Special ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Music (Replace with your own mp3 file) -->
+<audio autoplay loop>
+    <source src="love-song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+    <!-- Replace image.jpg with her picture -->
+    <img src="wue.jpg" alt="Someone Special">
+
+    <h1>Hi, Beautiful ❤️</h1>
+
+    <p>
+        We may have just met,  
+        but somehow you already feel special.
+        <br><br>
+        There's something about your smile,  
+        your energy, your presence…
+        that feels different.
+        <br><br>
+        I don't know where this journey will take us,  
+        but I know I'm genuinely happy  
+        that our paths crossed.
+        <br><br>
+        And I'm looking forward to discovering  
+        more smiles, more laughter,  
+        and more moments with you.
+    </p>
+
+    <button onclick="showMessage()">Click Me 💕</button>
+
+</div>
+
+<script>
+    function showMessage() {
+        alert("I'm really glad I met you ❤️");
+    }
+
+    function createHeart() {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerHTML = "❤️";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.fontSize = Math.random() * 20 + 15 + "px";
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 6000);
+    }
+
+    setInterval(createHeart, 800);
+</script>
+
+</body>
+</html>
